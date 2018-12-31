@@ -1,5 +1,6 @@
 <template>
 <div class="container" @click="clickHandle('test click', $event)">
+  <home-header></home-header>
 
   <div class="userinfo" @click="bindViewTap">
     <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
@@ -24,6 +25,7 @@
 
 <script>
 import card from '@/components/card'
+import HomeHeader from './header'
 
 export default {
   data () {
@@ -34,7 +36,8 @@ export default {
   },
 
   components: {
-    card
+    card,
+    HomeHeader
   },
 
   methods: {

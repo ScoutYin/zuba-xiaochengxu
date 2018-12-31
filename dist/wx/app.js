@@ -1,11 +1,12 @@
 require("./common/manifest.js");
 require("./common/vendor.js");
+require("./common/manifest.js");
+require("./common/vendor.js");
 global.webpackJsonpMpvue([4],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
-/* 3 */,
-/* 4 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20,10 +21,11 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 
 __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
 
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
+const app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
 app.$mount();
 
 /***/ }),
+/* 4 */,
 /* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87,9 +89,9 @@ if (false) {(function () {
 "use strict";
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  created: function created() {
+  created() {
     // 调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || [];
+    const logs = wx.getStorageSync('logs') || [];
     logs.unshift(Date.now());
     wx.setStorageSync('logs', logs);
 
@@ -98,5 +100,5 @@ if (false) {(function () {
 });
 
 /***/ })
-],[4]);
+],[3]);
 //# sourceMappingURL=app.js.map
