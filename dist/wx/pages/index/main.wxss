@@ -1,5 +1,7 @@
-@import "../../common/vendor.wxss";
 
+.container.data-v-799d47bc {
+  padding: 0 30rpx;
+}
 .userinfo.data-v-799d47bc {
   display: flex;
   flex-direction: column;
@@ -29,4 +31,23 @@
   padding: 10rpx 20rpx;
   color: blue;
   border: 2rpx solid blue;
+}
+.home-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.home-header-search {
+  margin-left: 20rpx;
+  flex: 1;
+}
+.home-header-search .van-search {
+  border-radius: 50rpx;
+  background: #f2f2f2;
+}
+.home-header-search .van-cell {
+  background: transparent;
+}
+.home-header-search .van-icon {
+  color: #999;
 }

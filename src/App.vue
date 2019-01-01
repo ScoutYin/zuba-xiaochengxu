@@ -12,6 +12,8 @@ export default {
 </script>
 
 <style>
+@import "~@/assets/style/index.scss";
+
 .container {
   height: 100%;
   display: flex;

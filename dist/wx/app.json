@@ -5,7 +5,9 @@
     "pages/counter/main"
   ],
   "usingComponents": {
-    "van-button": "static/vant/button/index"
+    "van-button": "static/vant/button/index",
+    "van-icon": "static/vant/icon/index",
+    "van-search": "static/vant/search/index"
   },
   "window": {
     "backgroundTextStyle": "light",

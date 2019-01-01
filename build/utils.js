@@ -48,6 +48,19 @@ exports.cssLoaders = function (options) {
           sourceMap: options.sourceMap
         })
       })
+      // 引入全局sass、scss文件
+      if (loader === 'scss' || loader === 'sass') {
+        loaders.push({
+          loader: 'sass-resources-loader',
+          options: {
+            sourceMap: options.sourceMap,
+            resources: [
+              path.join(__dirname, '../src/assets/style/var.scss'),
+              path.join(__dirname, '../src/assets/style/mixins.scss')
+            ]
+          }
+        })
+      }
     }
 
     // Extract CSS when that option is specified

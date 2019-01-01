@@ -2,29 +2,10 @@
 <div class="container" @click="clickHandle('test click', $event)">
   <home-header></home-header>
 
-  <div class="userinfo" @click="bindViewTap">
-    <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-    <div class="userinfo-nickname">
-      <card :text="userInfo.nickName"></card>
-    </div>
-  </div>
-
-  <div class="usermotto">
-    <div class="user-motto">
-      <card :text="motto"></card>
-    </div>
-  </div>
-
-  <form class="form-container">
-    <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-    <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-  </form>
-  <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
 </div>
 </template>
 
 <script>
-import card from '@/components/card'
 import HomeHeader from './header'
 
 export default {
@@ -36,7 +17,6 @@ export default {
   },
 
   components: {
-    card,
     HomeHeader
   },
 
@@ -69,7 +49,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+.container {
+  padding: 0 $aside-padding;
+}
 .userinfo {
   display: flex;
   flex-direction: column;

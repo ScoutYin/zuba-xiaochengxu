@@ -1,3 +1,4 @@
-<import src="/components/card.vue.wxml" />
 <import src="/pages/index/header.vue.wxml" />
 <import src="/components/card.vue.wxml" />
+<import src="/components/card.vue.wxml" />
+<import src="/pages/index/header.vue.wxml" />
