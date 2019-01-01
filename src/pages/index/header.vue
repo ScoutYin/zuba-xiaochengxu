@@ -33,8 +33,10 @@ export default {
   align-items: center;
   width: 100%;
 
+  &-location {
+    margin-right: 12px;
+  }
   &-search {
-    margin-left: 20rpx;
     flex: 1;
     .van-search {
       border-radius: 50rpx;

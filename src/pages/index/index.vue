@@ -1,12 +1,15 @@
 <template>
 <div class="container" @click="clickHandle('test click', $event)">
   <home-header></home-header>
-
+  <div class="banner-wrapper">
+    <home-banner></home-banner>
+  </div>
 </div>
 </template>
 
 <script>
 import HomeHeader from './header'
+import HomeBanner from './banner'
 
 export default {
   data () {
@@ -17,7 +20,8 @@ export default {
   },
 
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeBanner
   },
 
   methods: {
@@ -54,39 +58,11 @@ export default {
 .container {
   padding: 0 $aside-padding;
 }
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.banner-wrapper {
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-
-.counter {
-  display: inline-block;
-  margin: 10px auto;
-  padding: 5px 10px;
-  color: blue;
-  border: 1px solid blue;
-}
 </style>
