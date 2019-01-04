@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss">
 .home-header {
+  padding: 0 $aside-padding;
   display: flex;
   align-items: center;
   width: 100%;

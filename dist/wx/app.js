@@ -1,5 +1,7 @@
 require("./common/manifest.js");
 require("./common/vendor.js");
+require("./common/manifest.js");
+require("./common/vendor.js");
 global.webpackJsonpMpvue([4],[
 /* 0 */,
 /* 1 */,
@@ -27,7 +29,7 @@ app.$mount();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(7);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -80,7 +82,8 @@ if (false) {(function () {
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

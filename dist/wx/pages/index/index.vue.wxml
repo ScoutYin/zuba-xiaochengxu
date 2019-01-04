@@ -1,6 +1,9 @@
 <import src="/pages/index/header.vue.wxml" />
-<import src="/pages/index/banner.vue.wxml" /><template name="145c2d30">
-  <view class="_div data-v-799d47bc container" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"><template data="{{...$root[$kk+'0'], $root}}" is="10619f67"></template>
+<import src="/pages/index/banner.vue.wxml" />
+<import src="/pages/index/link-entry.vue.wxml" /><template name="145c2d30">
+  <view class="_div data-v-799d47bc container" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-799d47bc header-wrapper"><template data="{{...$root[$kk+'0'], $root}}" is="10619f67"></template></view>
     <view class="_div data-v-799d47bc banner-wrapper"><template data="{{...$root[$kk+'1'], $root}}" is="5d04d486"></template></view>
+    <view class="_div data-v-799d47bc link-entry-wrapper"><template data="{{...$root[$kk+'2'], $root}}" is="08f57bb9"></template></view>
   </view>
 </template>

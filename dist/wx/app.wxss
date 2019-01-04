@@ -43,7 +43,13 @@
 .van-icon-renxiang:before { content: "\E622"; }
 
 .van-icon-renshu:before { content: "\E618"; }
+body, page {
+  background-color: #f2f2f2;
+}
 
+view {
+  box-sizing: border-box;
+}
 .container {
   height: 100%;
   display: flex;
